@@ -12,7 +12,6 @@ Additionally, this code then pulls SOME of the metadata available through SOCRAT
 * Description
 * Created Date
 * Modified Date
-* Publisher (this may be specific to CA CHHS, if it is causing errors, remove it from the code)
 
 ###Requirements
 * Python 2.x
