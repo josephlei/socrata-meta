@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[11]:
+# In[ ]:
 
 #import the required libraries
 import csv
@@ -9,13 +9,13 @@ import requests
 import simplejson as json
 
 
-# In[12]:
+# In[ ]:
 
 targeturl='https://gavaobert.gavaciutat.cat/' #change this to the SOCRATA portal you want to target, don't forget ending /
 descriptor='GAVA'   #change this to a recognizable descriptor for yourself
 
 
-# In[13]:
+# In[ ]:
 
 r=requests.get(targeturl+"api/dcat.json") #build string according to SOCRATA's convention
 
@@ -33,7 +33,7 @@ behind your API calls:
 j=r.json() #parse the json into a dictionary named j, coincidentally j's KVPs are also dictionaries
 
 
-# In[14]:
+# In[ ]:
 
 #if it fetched the data successfully, continue; otherwise stop
 #this could probably be implemented more pythonically.. but it works for now
@@ -43,7 +43,7 @@ else:
     sys.exit()
 
 
-# In[15]:
+# In[ ]:
 
 #this cell retrieves the list of keywords from all datasets and loads them into one list named masterlist
 
@@ -57,26 +57,26 @@ for i in j:
             masterlist.append(x.lstrip())
 
 
-# In[16]:
+# In[ ]:
 
 masterlist.sort() #sort masterlist
 print "master keyword list built:", len(masterlist),"elements" #print how many elements are in masterlist
 
 
-# In[17]:
+# In[ ]:
 
 keywords=open(descriptor+' - KEYWORDS.csv', 'wb') #open the csv file for writing
 print "master keyword list file opened, starting to write rows"
 
 
-# In[18]:
+# In[ ]:
 
 for i in masterlist:
     csv.writer(keywords).writerow([i.encode("utf-8")])
 #this may need to be tweaked to optimize encoding to handle errors
 
 
-# In[19]:
+# In[ ]:
 
 keywords.close() #close csv writing, release all locks
 print "master keyword list file closed, all rows written \n"
@@ -97,11 +97,14 @@ counter=0
 for i in j:
     if len(i['identifier']) == 9:
         counter=counter+1
-        if counter%10==0: #modify the modulus to change the frequency of printouts
-            print counter,"of",len(j)-1,"rows written,",(len(j)-1)-counter,"remaining"
-        metastring=targeturl+"api/views/"+i['identifier']+".json"
-        x=requests.request('get',metastring).json()
-        csv.writer(metadata).writerow([i['identifier'].encode("utf-8"),x['viewCount'], i['title'].encode("utf-8"), i['description'].encode("utf-8"),i['created'],i['modified']) #write one line to csv file, list of elements only!
+        try:
+            if counter%10==0: #modify the modulus to change the frequency of printouts
+                print counter,"of",len(j)-1,"rows written,",(len(j)-1)-counter,"remaining"
+            metastring=targeturl+"api/views/"+i['identifier']+".json"
+            x=requests.request('get',metastring).json()
+            csv.writer(metadata).writerow([i['identifier'].encode("utf-8"),x['viewCount'], i['title'].encode("utf-8"), i['description'].encode("utf-8"),i['created'],i['modified']]) #write one line to csv file, list of elements only!
+        except:
+            print "error, continuing"
 
 
 # In[ ]:
