@@ -11,8 +11,8 @@ import simplejson as json
 
 # In[12]:
 
-targeturl='http://chhs.data.ca.gov/' #change this to the SOCRATA portal you want to target, don't forget ending /
-descriptor='CHHS OPEN DATA PORTAL'   #change this to a recognizable descriptor for yourself
+targeturl='https://gavaobert.gavaciutat.cat/' #change this to the SOCRATA portal you want to target, don't forget ending /
+descriptor='GAVA'   #change this to a recognizable descriptor for yourself
 
 
 # In[13]:
@@ -88,7 +88,7 @@ print "master keyword list file closed, all rows written \n"
 #this can be modified to produce specific metadata elements YOU want, examine /api/dcat.json as needed
 
 metadata=open(descriptor+' - METADATA.csv', 'wb')
-csv.writer(metadata).writerow(['identifier','views','title','description','created','modified','publisher'])
+csv.writer(metadata).writerow(['identifier','views','title','description','created','modified'])
 
 
 # In[ ]:
@@ -101,8 +101,7 @@ for i in j:
             print counter,"of",len(j)-1,"rows written,",(len(j)-1)-counter,"remaining"
         metastring=targeturl+"api/views/"+i['identifier']+".json"
         x=requests.request('get',metastring).json()
-        publisher=x['metadata']['custom_fields']['Dataset Summary']['Publisher']
-        csv.writer(metadata).writerow([i['identifier'].encode("utf-8"),x['viewCount'], i['title'].encode("utf-8"), i['description'].encode("utf-8"),i['created'],i['modified'],publisher]) #write one line to csv file, list of elements only!
+        csv.writer(metadata).writerow([i['identifier'].encode("utf-8"),x['viewCount'], i['title'].encode("utf-8"), i['description'].encode("utf-8"),i['created'],i['modified']) #write one line to csv file, list of elements only!
 
 
 # In[ ]:
