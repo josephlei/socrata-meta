@@ -11,13 +11,25 @@ import simplejson as json
 
 # In[12]:
 
-targeturl='http://chhs.data.ca.gov/' #change this to the SOCRATA portal you want to target
+targeturl='http://chhs.data.ca.gov/' #change this to the SOCRATA portal you want to target, don't forget ending /
 descriptor='CHHS OPEN DATA PORTAL'   #change this to a recognizable descriptor for yourself
 
 
 # In[13]:
 
 r=requests.get(targeturl+"api/dcat.json") #build string according to SOCRATA's convention
+
+'''
+SOCRATA has a limit to how many requests can be made every hour from a public pool without an application token.
+This can especially be a problem if your portal has over 100 datasets. Every time this program is run, you are
+making (x+1) request "pings" against SOCRATA servers, where x is the number of datasets on the target portal
+
+If you are running into this, you will need to register an account with SOCRATA and append the following code
+behind your API calls:
+
+?$$app_token=INSERT-YOUR-APP-TOKEN-HERE
+'''
+
 j=r.json() #parse the json into a dictionary named j, coincidentally j's KVPs are also dictionaries
 
 
