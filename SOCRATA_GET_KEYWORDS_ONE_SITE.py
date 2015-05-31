@@ -11,8 +11,8 @@ import simplejson as json
 
 # In[ ]:
 
-targeturl='https://gavaobert.gavaciutat.cat/' #change this to the SOCRATA portal you want to target, don't forget ending /
-descriptor='GAVA'   #change this to a recognizable descriptor for yourself
+targeturl='https://data.cityofdeleon.org/' #change this to the SOCRATA portal you want to target, don't forget ending /
+descriptor='DELEON'   #change this to a recognizable descriptor for yourself
 
 
 # In[ ]:
