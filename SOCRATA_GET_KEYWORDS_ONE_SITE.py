@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[ ]:
+# In[1]:
 
 #import the required libraries
 import csv
@@ -9,15 +9,18 @@ import requests
 import simplejson as json
 
 
-# In[ ]:
+# In[2]:
 
-targeturl='https://data.cityofdeleon.org/' #change this to the SOCRATA portal you want to target, don't forget ending /
-descriptor='DELEON'   #change this to a recognizable descriptor for yourself
+targeturl='https://data.lacity.org/' #change this to the SOCRATA portal you want to target, don't forget ending /
+descriptor='LOS ANGELES'   #change this to a recognizable descriptor for yourself
 
 
-# In[ ]:
+# In[3]:
 
 r=requests.get(targeturl+"api/dcat.json") #build string according to SOCRATA's convention
+
+
+# In[4]:
 
 '''
 SOCRATA has a limit to how many requests can be made every hour from a public pool without an application token.
@@ -30,10 +33,13 @@ behind your API calls:
 ?$$app_token=INSERT-YOUR-APP-TOKEN-HERE
 '''
 
+
+# In[5]:
+
 j=r.json() #parse the json into a dictionary named j, coincidentally j's KVPs are also dictionaries
 
 
-# In[ ]:
+# In[6]:
 
 #if it fetched the data successfully, continue; otherwise stop
 #this could probably be implemented more pythonically.. but it works for now
@@ -43,7 +49,7 @@ else:
     sys.exit()
 
 
-# In[ ]:
+# In[7]:
 
 #this cell retrieves the list of keywords from all datasets and loads them into one list named masterlist
 
@@ -57,32 +63,32 @@ for i in j:
             masterlist.append(x.lstrip())
 
 
-# In[ ]:
+# In[8]:
 
 masterlist.sort() #sort masterlist
 print "master keyword list built:", len(masterlist),"elements" #print how many elements are in masterlist
 
 
-# In[ ]:
+# In[9]:
 
 keywords=open(descriptor+' - KEYWORDS.csv', 'wb') #open the csv file for writing
 print "master keyword list file opened, starting to write rows"
 
 
-# In[ ]:
+# In[10]:
 
 for i in masterlist:
     csv.writer(keywords).writerow([i.encode("utf-8")])
 #this may need to be tweaked to optimize encoding to handle errors
 
 
-# In[ ]:
+# In[11]:
 
 keywords.close() #close csv writing, release all locks
 print "master keyword list file closed, all rows written \n"
 
 
-# In[ ]:
+# In[12]:
 
 #the below dumps out identifiers, views, titles and descriptions, created, modified and publisher
 #this can be modified to produce specific metadata elements YOU want, examine /api/dcat.json as needed
@@ -91,7 +97,7 @@ metadata=open(descriptor+' - METADATA.csv', 'wb')
 csv.writer(metadata).writerow(['identifier','views','title','description','created','modified'])
 
 
-# In[ ]:
+# In[13]:
 
 counter=0
 for i in j:
@@ -107,7 +113,7 @@ for i in j:
             print "error, continuing"
 
 
-# In[ ]:
+# In[14]:
 
 metadata.close() #Close the output file, release all locks
 print len(j)-1,"of",len(j)-1,"rows written, 0 remaining" #print final completion notice
