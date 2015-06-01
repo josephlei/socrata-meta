@@ -1,5 +1,6 @@
 # Socrata Meta Data Extractor, by Joseph Lei
 ### Purposed for use at 2015 National Day of Civic Hacking (NDoCH) events
+#### NOTICE: This script is not fully tested, may contain bugs and may not work with all SOCRATA sites.  Please raise an issue or pull request if you spot something to improve, thanks!
 
 ####This python script targets ONE of the over 100 SOCRATA Open Data Portal websites (specified by you the user) and retrieves the meta data for the entire portal.  
 
