@@ -1,3 +1,4 @@
 .socrata
 *.csv
 *CHHS*
+*.sh
