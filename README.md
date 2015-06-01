@@ -1,6 +1,8 @@
-# Socrata Meta Data Extractor, by Joseph Lei
+## Socrata Meta Data Extractor, by Joseph Lei
 ### Purposed for use at 2015 National Day of Civic Hacking (NDoCH) events
 #### NOTICE: This script is not fully tested, may contain bugs and may not work with all SOCRATA sites.  Please raise an issue or pull request if you spot something to improve, thanks!
+
+This repo also contains one .csv file with every portal and identifier that I have been able to find.. updates coming soon
 
 ####This python script targets ONE of the over 100 SOCRATA Open Data Portal websites (specified by you the user) and retrieves the meta data for the entire portal.  
 
@@ -26,3 +28,4 @@ Additionally, this code then pulls SOME of the metadata available through SOCRAT
   * http://docs.python-requests.org/en/latest/community/faq/
   * https://stackoverflow.com/questions/18578439/using-requests-with-tls-doesnt-give-sni-support/18579484#18579484
 2. Code does not yet work with custom fields defined by the individual owners of the portals, ex. CA CHHS has defined a "publisher" property that describes what department published the data, but this is not present in any other SOCRATA portal
+
