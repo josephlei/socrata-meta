@@ -7,6 +7,7 @@
 import csv
 import requests
 import simplejson as json
+import datetime
 
 
 # In[2]:
@@ -17,7 +18,7 @@ descriptor='CHHS OPEN DATA PORTAL'   #change this to a recognizable descriptor f
 
 # In[3]:
 
-r=requests.get(targeturl+"api/dcat.json") #build string according to SOCRATA's convention
+r=requests.get(targeturl+"api/dcat.json") #build string according to SOCRATA's convention, this is in json format
 
 '''
 SOCRATA has a limit to how many requests can be made every hour from a public pool without an application token.
@@ -35,6 +36,21 @@ j=r.json() #parse the json into a dictionary named j, coincidentally j's KVPs ar
 
 # In[4]:
 
+print r.url
+today=datetime.date.today()
+print str(today)
+
+
+# In[5]:
+
+#"dcat-files/"+url_clean+".json", 'w'
+
+with open("chhs-json-repo/chhs-dcat-"+str(today)+".json", 'w') as outfile:
+    outfile.write(r.text.encode("utf-8"))
+
+
+# In[7]:
+
 #if it fetched the data successfully, continue; otherwise stop
 #this could probably be implemented more pythonically.. but it works for now
 if r.status_code==200:
@@ -43,7 +59,7 @@ else:
     sys.exit()
 
 
-# In[5]:
+# In[7]:
 
 #this cell retrieves the list of keywords from all datasets and loads them into one list named masterlist
 
@@ -57,32 +73,32 @@ for i in j:
             masterlist.append(x.lstrip())
 
 
-# In[6]:
+# In[8]:
 
 masterlist.sort() #sort masterlist
 print "master keyword list built:", len(masterlist),"elements" #print how many elements are in masterlist
 
 
-# In[7]:
+# In[9]:
 
 keywords=open(descriptor+' - KEYWORDS.csv', 'wb') #open the csv file for writing
 print "master keyword list file opened, starting to write rows"
 
 
-# In[8]:
+# In[10]:
 
 for i in masterlist:
     csv.writer(keywords).writerow([i.encode("utf-8")])
 #this may need to be tweaked to optimize encoding to handle errors
 
 
-# In[9]:
+# In[11]:
 
 keywords.close() #close csv writing, release all locks
 print "master keyword list file closed, all rows written \n"
 
 
-# In[10]:
+# In[12]:
 
 #the below dumps out identifiers, views, titles and descriptions, created, modified and publisher
 #this can be modified to produce specific metadata elements YOU want, examine /api/dcat.json as needed
@@ -91,7 +107,7 @@ metadata=open(descriptor+' - METADATA.csv', 'wb')
 csv.writer(metadata).writerow(['identifier','views','title','description','created','modified','publisher'])
 
 
-# In[11]:
+# In[13]:
 
 counter=0
 for i in j:
@@ -105,8 +121,13 @@ for i in j:
         csv.writer(metadata).writerow([i['identifier'].encode("utf-8"),x['viewCount'], i['title'].encode("utf-8"), i['description'].encode("utf-8"),i['created'],i['modified'],publisher]) #write one line to csv file, list of elements only!
 
 
-# In[12]:
+# In[14]:
 
 metadata.close() #Close the output file, release all locks
 print len(j)-1,"of",len(j)-1,"rows written, 0 remaining" #print final completion notice
+
+
+# In[ ]:
+
+
 
