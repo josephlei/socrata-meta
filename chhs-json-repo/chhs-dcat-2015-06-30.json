@@ -9,6 +9,59 @@
   "webService" : "https://chhs.data.ca.gov/data.json"
 }, {
   "accessLevel" : "Public",
+  "accessURL" : "https://chhs.data.ca.gov/api/views/5pvx-hnf7/rows.csv?accessType=DOWNLOAD",
+  "created" : "2015-05-28",
+  "description" : "The Case Mix Index (CMI) is the average relative DRG weight of a hospital’s inpatient discharges, calculated by summing the Medicare Severity-Diagnosis Related Group (MS-DRG) weight for each discharge and dividing the total by the number of discharges.  The CMI reflects the diversity, clinical complexity, and resource needs of all the patients in the hospital.  A higher CMI indicates a more complex and resource-intensive case load.  Although the MS-DRG weights, provided by the Centers for Medicare & Medicaid Services (CMS), were designed for the Medicare population, they are applied here to all discharges regardless of payer.  Note: It is not meaningful to add the CMI values together.",
+  "feed" : "https://chhs.data.ca.gov/api/views/5pvx-hnf7/rows.rss",
+  "format" : "text/csv",
+  "identifier" : "5pvx-hnf7",
+  "keyword" : "case mix index,office of statewide health planning and development,oshpd,acuity,ms-drg,msdrg,drg,weight,diagnosis related group,cmi",
+  "license" : "Public Domain\nOffice of Statewide Health Planning and Development/Healthcare Information Division/Healthcare Information Resource Center",
+  "modified" : "2015-06-30",
+  "releaseDate" : "2015-05-28",
+  "theme" : "Facilities and Services",
+  "title" : "Case Mix Index-1996-2014",
+  "webService" : "https://chhs.data.ca.gov/resource/5pvx-hnf7",
+  "distribution" : [ {
+    "accessURL" : "https://chhs.data.ca.gov/api/views/5pvx-hnf7/rows.csv?accessType=DOWNLOAD",
+    "formats" : [ {
+      "label" : "csv",
+      "value" : "text/csv"
+    } ]
+  }, {
+    "accessURL" : "https://chhs.data.ca.gov/api/views/5pvx-hnf7/rows.json?accessType=DOWNLOAD",
+    "formats" : [ {
+      "label" : "json",
+      "value" : "application/json"
+    } ]
+  }, {
+    "accessURL" : "https://chhs.data.ca.gov/api/views/5pvx-hnf7/rows.xml?accessType=DOWNLOAD",
+    "formats" : [ {
+      "label" : "xml",
+      "value" : "application/xml"
+    } ]
+  }, {
+    "accessURL" : "https://chhs.data.ca.gov/api/views/5pvx-hnf7/rows.rdf?accessType=DOWNLOAD",
+    "formats" : [ {
+      "label" : "rdf",
+      "value" : "application/xml+rdf"
+    } ]
+  }, {
+    "accessURL" : "https://chhs.data.ca.gov/api/views/5pvx-hnf7/rows.xls?accessType=DOWNLOAD",
+    "formats" : [ {
+      "label" : "xls",
+      "value" : "application/excel"
+    } ]
+  }, {
+    "accessURL" : "https://chhs.data.ca.gov/api/views/5pvx-hnf7/rows.xlsx?accessType=DOWNLOAD",
+    "formats" : [ {
+      "label" : "xlsx",
+      "value" : "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    } ]
+  } ],
+  "keywords" : [ "case mix index", "office of statewide health planning and development", "oshpd", "acuity", "ms-drg", "msdrg", "drg", "weight", "diagnosis related group", "cmi" ]
+}, {
+  "accessLevel" : "Public",
   "accessURL" : "https://chhs.data.ca.gov/api/views/pch7-48qc/rows.csv?accessType=DOWNLOAD",
   "created" : "2015-04-10",
   "description" : "This data is from the California Department of Managed Health Care (DMHC). It contains all decisions from Independent Medical Reviews (IMR) administered by the DMHC since January 1, 2001. An IMR is an independent review of a denied, delayed, or modified health care service that the health plan has determined to be not medically necessary, experimental/investigational or non-emergent/urgent. If the IMR is decided in an enrollees favor, the health plan must authorize the service or treatment requested.",
@@ -818,59 +871,6 @@
     } ]
   } ],
   "keywords" : [ "death", "zip code", "cause of death" ]
-}, {
-  "accessLevel" : "Public",
-  "accessURL" : "https://chhs.data.ca.gov/api/views/5pvx-hnf7/rows.csv?accessType=DOWNLOAD",
-  "created" : "2015-05-28",
-  "description" : "The Case Mix Index (CMI) is the average relative DRG weight of a hospital’s inpatient discharges, calculated by summing the Medicare Severity-Diagnosis Related Group (MS-DRG) weight for each discharge and dividing the total by the number of discharges.  The CMI reflects the diversity, clinical complexity, and resource needs of all the patients in the hospital.  A higher CMI indicates a more complex and resource-intensive case load.  Although the MS-DRG weights, provided by the Centers for Medicare & Medicaid Services (CMS), were designed for the Medicare population, they are applied here to all discharges regardless of payer.  Note: It is not meaningful to add the CMI values together.",
-  "feed" : "https://chhs.data.ca.gov/api/views/5pvx-hnf7/rows.rss",
-  "format" : "text/csv",
-  "identifier" : "5pvx-hnf7",
-  "keyword" : "case mix index,office of statewide health planning and development,oshpd,acuity,ms-drg,msdrg,drg,weight,diagnosis related group,cmi",
-  "license" : "Public Domain\nOffice of Statewide Health Planning and Development/Healthcare Information Division/Healthcare Information Resource Center",
-  "modified" : "2015-05-28",
-  "releaseDate" : "2015-05-28",
-  "theme" : "Facilities and Services",
-  "title" : "Case Mix Index-1996-2013",
-  "webService" : "https://chhs.data.ca.gov/resource/5pvx-hnf7",
-  "distribution" : [ {
-    "accessURL" : "https://chhs.data.ca.gov/api/views/5pvx-hnf7/rows.csv?accessType=DOWNLOAD",
-    "formats" : [ {
-      "label" : "csv",
-      "value" : "text/csv"
-    } ]
-  }, {
-    "accessURL" : "https://chhs.data.ca.gov/api/views/5pvx-hnf7/rows.json?accessType=DOWNLOAD",
-    "formats" : [ {
-      "label" : "json",
-      "value" : "application/json"
-    } ]
-  }, {
-    "accessURL" : "https://chhs.data.ca.gov/api/views/5pvx-hnf7/rows.xml?accessType=DOWNLOAD",
-    "formats" : [ {
-      "label" : "xml",
-      "value" : "application/xml"
-    } ]
-  }, {
-    "accessURL" : "https://chhs.data.ca.gov/api/views/5pvx-hnf7/rows.rdf?accessType=DOWNLOAD",
-    "formats" : [ {
-      "label" : "rdf",
-      "value" : "application/xml+rdf"
-    } ]
-  }, {
-    "accessURL" : "https://chhs.data.ca.gov/api/views/5pvx-hnf7/rows.xls?accessType=DOWNLOAD",
-    "formats" : [ {
-      "label" : "xls",
-      "value" : "application/excel"
-    } ]
-  }, {
-    "accessURL" : "https://chhs.data.ca.gov/api/views/5pvx-hnf7/rows.xlsx?accessType=DOWNLOAD",
-    "formats" : [ {
-      "label" : "xlsx",
-      "value" : "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-    } ]
-  } ],
-  "keywords" : [ "case mix index", "office of statewide health planning and development", "oshpd", "acuity", "ms-drg", "msdrg", "drg", "weight", "diagnosis related group", "cmi" ]
 }, {
   "accessLevel" : "Public",
   "accessURL" : "https://chhs.data.ca.gov/api/views/k9fb-stqc/rows.csv?accessType=DOWNLOAD",
@@ -5196,7 +5196,7 @@
   "format" : "text/csv",
   "identifier" : "emt8-tzcf",
   "keyword" : "cosmetics,chemicals,consumer products",
-  "modified" : "2015-06-29",
+  "modified" : "2015-06-30",
   "releaseDate" : "2014-09-15",
   "theme" : "Environmental",
   "title" : "Chemicals in Cosmetics",
