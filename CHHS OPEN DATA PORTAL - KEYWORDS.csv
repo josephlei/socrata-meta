@@ -7,10 +7,8 @@
 aaa repair
 aaa repair
 aaa repair
-aaa repair
 ab 523 extension
 abdominal
-abdominal aortic aneurysm
 abdominal aortic aneurysm
 abdominal aortic aneurysm
 abdominal aortic aneurysm repair
@@ -18,31 +16,32 @@ access
 accessible technologies
 accessible technologies
 accidental puncture
+active transportation
+active transportation
 acuity
 acuity
 acute care hospital building
 acute myocardial infarction
 acute myocardial infarction
-acute myocardial infarction
-acute stroke
 acute stroke
 acute stroke
 admitted
 admitted
 adolescents
 adult
+adults
 advertisements
 age
 age
 age
 age
+age
 agency for healthcare research and quality
 agency for healthcare research and quality
 agency for healthcare research and quality
 agency for healthcare research and quality
 agency for healthcare research and quality
-agency for healthcare research and quality
-ahrq
+agravated assualt
 ahrq
 ahrq
 ahrq
@@ -50,14 +49,16 @@ ahrq
 ahrq
 aid codes
 aids
+alcohol
+alcohol drinking
+alcohol outlets
+alcoholism
 ambulance diversion
-ami
 ami
 ami
 amputation
 and treatment program
 angina
-angioplasty
 angioplasty
 angioplasty
 angioplasty
@@ -90,9 +91,15 @@ bacterial infections
 bacterial infections
 basic
 basic
+bicycle
+bicycle
 bile ducts and extrahepatic
 birth
 birth
+birth
+birth
+birth rate
+birth rate
 births
 births
 births
@@ -104,7 +111,6 @@ blood stream
 bone
 borrower name
 brain
-brain surgery
 brain surgery
 brain surgery
 branch
@@ -131,18 +137,23 @@ california
 california
 california
 california
+california births
 california children
+california county births
 california health professional shortage areas
 california health professional shortage areas
 california health professional shortage areas
 california health professional shortage areas
 california health professional shortage areas
 california regions
+california technologist
+california wellness plan
+car
 care
 carotid endarterectomy
 carotid endarterectomy
 carotid endarterectomy
-carotid endarterectomy
+carpool
 case mix index
 catalog
 cause of death
@@ -152,6 +163,9 @@ census tracts
 census tracts
 census tracts
 central venous catheter related
+central venous catheters
+central venous catheters
+central venous catheters
 central venous catheters
 central venous catheters
 certified eligibles
@@ -173,7 +187,9 @@ children
 children
 children
 children
+children
 cholecystectomy
+chronic disease
 chronic disease
 chronic disease
 cigarette
@@ -195,6 +211,8 @@ cmi
 colectomy
 colorectal surgery
 community hospitals
+commuting
+commuting
 comparable
 comparable
 complications
@@ -221,8 +239,12 @@ county
 county
 craniotomy
 craniotomy
-craniotomy
 credit enhancement
+crime
+crime data
+cross infection
+cross infection
+cross infection
 cross infection
 cross infection
 cross infection
@@ -237,15 +259,20 @@ cross infection
 cross walk
 crosswalk
 current principal balance
+data
 date loan insured
 death
 death
 death
 deaths
+deaths
 deep vein thrombosis
 dehydration
 delivery
 delivery
+delivery of health care
+delivery of health care
+delivery of health care
 delivery of health care
 delivery of health care
 delivery of health care
@@ -267,6 +294,7 @@ department of rehabilitation office locations
 diabetes
 diagnosis related group
 digestive system surgical procedures
+disability
 disease of repiratory system
 disease of respiratory system
 disorders
@@ -292,6 +320,8 @@ early intervention
 ed
 ed
 ed
+education
+educational attainment
 eligibility
 eligibility certification
 eligibility determination
@@ -316,14 +346,15 @@ epidemiology
 epidemiology
 epidemiology
 epidemiology
-esophageal cancer surgery
+epidemiology
+epidemiology
+epidemiology
 esophageal cancer surgery
 esophageal cancer surgery
 esophageal cancer surgery
 esophageal resection
 esophageal resection
 esophageal resection
-esophageal resection
 ethnicity
 ethnicity
 ethnicity
@@ -336,6 +367,7 @@ exemptions
 exemptions
 exemptions
 exemptions
+exercise
 expected payer
 extension requests status
 extension requests status
@@ -345,16 +377,18 @@ facility list
 facility type
 family pact
 family planning
+fatalities
 fee for service
 female
 filing
+fluoroscopy
 fractures
 gall bladder surgery
 gastrectomy
 gastro-intestinal hemorrhage
 gastro-intestinal hemorrhage
-gastro-intestinal hemorrhage
 gender
+health
 health assessments
 health care enforcement actions
 health care violations
@@ -364,10 +398,15 @@ health facilities
 health facilities
 health facilities
 health facility construction loan insurance fund
+health information
 health outcome
 health outcome
 health plan violations
 health professional shortage area (hpsa)
+health promotion
+healthcare
+healthcare
+healthcare
 healthcare
 healthcare
 healthcare
@@ -401,20 +440,23 @@ healthcare quality
 healthcare quality
 healthcare quality
 healthcare quality
-healthcare quality
 healthcare workforce
 healthcare workforce
 healthcare workforce
 healthcare workforce
 healthcare workforce
 healthy community indicator
+healthy community indicator
+healthy community indicator
+healthy community indicator
+healthy community indicator
+healthy community indicator
+healthy community indicators
 heart bypass
 heart failure
 heart failure
 heart failure
-heart failure
 heart transplantation
-hemorrhagic stroke
 hemorrhagic stroke
 hemorrhagic stroke
 hepb
@@ -431,13 +473,13 @@ hib
 high blood pressure
 hip fracture
 hip fracture
-hip fracture
 hip replacement
 hispanic
 hiv
 hmdr
 hmo help center
 home
+homicide
 hospital
 hospital
 hospital
@@ -452,7 +494,9 @@ hospital buildings
 hospital buildings
 hospital deaths
 hospital deaths
-hospital deaths
+hospital infections
+hospital infections
+hospital infections
 hospital infections
 hospital infections
 hospital infections
@@ -464,7 +508,6 @@ hospital infections
 hospital locations
 hospital locations
 hospital locations
-hospital mortality
 hospital mortality
 hospital mortality
 hospital mortality.
@@ -475,10 +518,13 @@ hospital quality
 hospital quality
 hospital quality
 hospital quality
-hospital quality
 hospital readmission
 hospital volume
 hospitalization
+hospitalization rates
+hospitals
+hospitals
+hospitals
 hospitals
 hospitals
 hospitals
@@ -500,7 +546,6 @@ hysterectomy vaginal
 hysteroscopy
 iatrogenic pneumothorax
 icd9-cm 493.0
-imi
 imi
 imi
 immunization
@@ -531,22 +576,21 @@ infection control
 infection control
 infection control
 infection control
+infection control
+infection control
+infection control
 injury
 inpatient
 inpatient
 inpatient deaths
 inpatient deaths
-inpatient deaths
 inpatient mortality indicators
 inpatient mortality indicators
-inpatient mortality indicators
 inpatient quality
 inpatient quality
 inpatient quality
 inpatient quality
 inpatient quality
-inpatient quality
-inpatient quality indicators
 inpatient quality indicators
 inpatient quality indicators
 inpatient quality indicators
@@ -556,7 +600,6 @@ insured loans by borrower
 insured risk
 internal mammary-coronary artery anastomosis
 iqi
-ischemic stroke
 ischemic stroke
 ischemic stroke
 ischemic stroke
@@ -577,6 +620,7 @@ let's get healthy california
 let's get healthy california
 let's get healthy california
 let's get healthy california
+let's get healthy california
 let’s get healthy california
 let’s get healthy california
 lghc
@@ -588,6 +632,8 @@ licensed healthcare facility listing
 licensed nurses
 list
 list of insured loans
+live birth
+live birth
 liver transplantation
 living center
 loan insurance
@@ -595,7 +641,9 @@ long-term care
 long-term care
 long-term care
 male
+mammography
 managed care
+manslaughter
 maternal outcomes
 maternity
 measures
@@ -631,7 +679,9 @@ mmr
 mmr
 mmr
 mortality
+mortality
 mortality rate
+mother
 mothers age
 mrsa
 mrsa
@@ -656,6 +706,7 @@ multiple drug resistance
 multiple drug resistance
 multiple drug resistance
 multiple drug resistance
+murder
 native american
 newborn screening
 newborn screening
@@ -663,6 +714,9 @@ newborn screening
 nonstructural performance category
 nonstructural performance category
 nonstructural performance category
+nosocomial infections
+nosocomial infections
+nosocomial infections
 nosocomial infections
 nosocomial infections
 nosocomial infections
@@ -684,6 +738,7 @@ nursing home locations
 nursing homes
 nursing homes
 nursing homes
+obesity
 office
 office of statewide health planning and development
 office of statewide health planning and development
@@ -711,8 +766,6 @@ pacemaker
 pancreatic cancer surgery
 pancreatic cancer surgery
 pancreatic cancer surgery
-pancreatic cancer surgery
-pancreatic resection
 pancreatic resection
 pancreatic resection
 pancreatic resection
@@ -732,12 +785,11 @@ pbe
 pci
 pci
 pci
-pci
 pediatric hospitals
 percutaneous coronary intervention
 percutaneous coronary intervention
 percutaneous coronary intervention
-percutaneous coronary intervention
+performance measures
 perioperative pulmonary embolism
 permanent medical exemption
 permanent medical exemption
@@ -755,6 +807,7 @@ pertussis
 pertussis
 pertussis
 pertussis
+physical activity
 physical rehabilitation
 physical rehabilitation
 pme
@@ -763,7 +816,6 @@ pme
 pme
 pme
 pme
-pneumonia
 pneumonia
 pneumonia
 pneumonia
@@ -794,6 +846,7 @@ prenatal
 prenatal
 pressure ulcer
 prevention
+prevention
 prevention quality indicator
 primary care
 primary care
@@ -803,6 +856,7 @@ primary care
 primary care
 private insurance
 profitability
+programs
 provider ratio
 provider ratio
 provider ratio
@@ -815,6 +869,7 @@ psi
 psi 90
 psi composite
 public health surveillance
+public transportation
 race
 race
 race
@@ -822,6 +877,7 @@ race
 race
 race
 race
+rape
 rate
 rate increase
 rate review
@@ -832,7 +888,9 @@ rational service area
 rational service area
 rational service area
 readmission
+recommendations
 rectal neoplasms
+regional
 registered nurses
 rehabilitation
 rehabilitation act
@@ -861,6 +919,7 @@ retraining
 retraining
 risk rating
 risk-adjusted rate
+robbery
 ruptured appendix
 rusp
 rusp
@@ -880,6 +939,7 @@ seismic safety
 seismic safety
 self-pay
 sex
+sexual assualt
 skilled nursing facilities
 skilled nursing facilities
 skilled nursing facilities
@@ -888,6 +948,11 @@ smoking
 smoking
 smoking
 smoking
+social determinants of health
+social determinants of health
+social determinants of health
+social determinants of health
+social determinants of health
 social determinants of health
 spc
 spc
@@ -904,7 +969,6 @@ staphylococcus aureus
 stents
 stents
 stents
-stents
 stroke
 structural performance category
 structural performance category
@@ -914,11 +978,13 @@ structural retrofit
 structural retrofit
 subarachnoid stroke
 subarachnoid stroke
-subarachnoid stroke
 surgical procedure
 surgical procedure
 surgical site infections
 surgical site infections
+surveillance
+surveillance
+surveillance
 surveillance
 surveillance
 surveillance
@@ -932,10 +998,13 @@ surveillance
 surveillance
 suspense
 table of contents
+targets
 tdap
 tdap
 teaching hospitals
+technologist
 teen
+teen mother
 thoracic surgery
 tobacco
 tobacco
@@ -945,6 +1014,8 @@ tobacco
 toc
 tracking indicator
 transgendered persons
+transportation
+transportation
 trauma
 trauma
 trauma level
@@ -954,6 +1025,7 @@ traumatic brain injury
 treatment stations
 under construction
 under-used procedures
+uniform crime report
 urinary tract infection
 uti
 utilization
@@ -971,15 +1043,22 @@ varicella
 varicella
 vbac
 ventilator
+violence
+violent crimes
 vocational rehabilitation
 vocational rehabilitation
 volume
 volume
 volume
+walking
+walking
 weight
 west nile virus
 white
 wic authorized vendors
+work from home
+x-ray
+x-ray technologist
 xwalk
 year completed
 youth
